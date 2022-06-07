@@ -11,6 +11,10 @@ int main(int argc, char *argv[])
 	prod->Use();
 	
 	delete prod;
+
+	Product * prod2 = Factory::createProduct("B");
+	prod2->Use();
+	delete prod2;
 	
 	return 0;
 }
